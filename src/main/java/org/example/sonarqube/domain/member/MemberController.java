@@ -9,4 +9,9 @@ public class MemberController {
 	public String memberInfo() {
 		return null;
 	}
+
+	@GetMapping("/save")
+	public String save() {
+		return null;
+	}
 }
