@@ -21,6 +21,17 @@ repositories {
     mavenCentral()
 }
 
+plugins {
+    id "org.sonarqube" version "5.0.0.4638"
+}
+
+sonar {
+    properties {
+        property "sonar.projectKey", "test"
+        property "sonar.projectName", "test"
+    }
+}
+
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
